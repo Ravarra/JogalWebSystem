@@ -1,0 +1,320 @@
+/* Reset e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f99224, #f88c00);
+}
+
+/* Caixa principal do formulário */
+.form-1 {
+    background: linear-gradient(135deg, #ffae58, #ffa23f); 
+    padding: 50px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; 
+}
+
+/* Título */
+form::before {
+    content: "Bem Vindo a Jogal!";
+    display: block;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #182848;
+    margin-bottom: 20px;
+}
+
+/* Campos */
+.form-group {
+    margin-bottom: 20px; 
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4b6cb7;
+    box-shadow: 0 0 6px rgba(75, 108, 183, 0.4);
+}
+
+/* Checkbox */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Botão */
+.a-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(235deg, #ff5b2a, #ff5b2a);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} 
+
+/* Catálogo */ 
+
+body {
+  background-color: #f57c00;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 80px; /* espaço para navbar fixa */
+}
+
+/* Título centralizado */
+body {
+  background-color: #f57c00;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 80px; /* espaço para navbar fixa */
+}
+
+/* Título centralizado */
+.titulo {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-size: 1.8em;
+}
+
+/* Container */
+.catalogo-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* Grid */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Card do produto */
+.produto {
+  background: #ffa23f;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 230px; /* ligeiramente menor pra caber 5 */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagens */
+.img-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  width: 150px;        /* largura desejada */
+  height: 150px;       /* altura desejada */
+  object-fit: cover;   /* corta e ajusta a imagem */
+  display: block;
+  margin: 0 auto;      /* centraliza a imagem */
+}
+
+/* Texto do produto */
+.nome {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.preco {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Botão */
+button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Promoção */
+.promocao {
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  background-color: #e53935;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 40px;
+  transform: rotate(-45deg);
+}
+
+.card img {
+    width: 150px;        /* largura desejada */
+    height: 150px;       /* altura desejada */
+    object-fit: cover;   /* corta e ajusta a imagem */
+    display: block;
+    margin: 0 auto;      /* centraliza a imagem */
+}
+
+/* responsividade da navbar */ 
+
+
+/* ---------- Navbar personalizada ---------- */
+
+/* Cor e estilo da barra */ 
+
+.navbar {
+    background-color: #ff5722 !important;
+    padding: 8px 16px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* LOGO + TEXTO */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+.navbar-brand img {
+    border-radius: 6px;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.navbar-toggler {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background-color: #ff784e; 
+    margin-right: auto;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* MENU COLAPSADO */
+.navbar-collapse {
+    background-color: #ff784e;
+    border-radius: 0 0 10px 10px;
+}
+
+/* AJUSTES MOBILE */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+}   
+
+
+
+/* Responsividade */ 
+
+@media (max-width: 1920px) {
+  .catalogo-container {
+    padding-top: 200px 
+  }
+} 
+
+@media (max-width: 1200px) {
+  .produtos {
+    grid-template-columns: repeat(4, 1fr);
+  } 
+    .catalogo-container {
+    padding-top: 500px 
+  }
+}
+
+@media (max-width: 992px) {
+  .produtos {
+    grid-template-columns: repeat(3, 1fr); 
+  } 
+    .catalogo-container {
+    padding-top: 900px 
+  }
+} 
+
+@media (max-width: 768px) {
+  .produtos {
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+    .catalogo-container {
+    padding-top: 1300px 
+  }
+} 

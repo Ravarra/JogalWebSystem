@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carrinho.css"> 
+    <link rel="icon" href="img/catálogo-estoque/logojogal.jpg">  
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color:#ff6d00;">
+        <div class="container-fluid px-4 d-flex align-items-center">
+
+            <a class="navbar-brand d-flex align-items-center text-white" href="#">
+                <img src="logo/imagem.jpg" alt="Logo" width="40" height="40" class="me-2">
+                Jogal
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li> 
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="carrinho.html">Meu Carrinho</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cadastroprodutos.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cadastrousuarios.html">Cadastrar usuários</a></li> 
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Espaço por causa da navbar fixa -->
+    <div style="height:80px;"></div>
+
+    <!-- Título -->
+    <h2 class="text-center titulo">Meu Carrinho</h2>
+
+    <!-- Área do carrinho -->
+    <div class="container carrinho-container">
+
+        <!-- Produto -->
+        <div class="item-carrinho">
+            <img src="img/catálogo-estoque/cheetos.jpg" alt="Produto">
+            <div class="infos">
+                <h5>Cheetos</h5>
+                <p>Preço: R$5,00</p>
+            </div>
+
+            <div class="quantidade">
+                <button class="btn btn-sm btn-decrement">-</button>
+                <span class="qtd">1</span>
+                <button class="btn btn-sm btn-increment">+</button>
+            </div>
+
+            <button class="btn btn-danger btn-remover">Remover</button>
+        </div>
+
+        <!-- Outro produto -->
+        <div class="item-carrinho">
+            <img src="img/catálogo-estoque/kit-kat.jpg" alt="Produto">  
+            <div class="infos">
+                <h5>KitKat</h5>
+                <p>Preço: R$5,00</p>
+            </div>
+
+            <div class="quantidade">
+                <button class="btn btn-sm btn-decrement">-</button>
+                <span class="qtd">2</span>
+                <button class="btn btn-sm btn-increment">+</button>
+            </div>
+
+            <button class="btn btn-danger btn-remover">Remover</button>
+        </div>
+
+    </div>
+
+    <!-- Resumo Final -->
+    <div class="container resumo">
+        <h4>Total: R$15,00</h4>
+        <button class="btn btn-finalizar">Finalizar Compra</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

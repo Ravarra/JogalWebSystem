@@ -1,0 +1,139 @@
+/* ======== BODY ======== */
+.body-class {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f99224, #f88c00);
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 90px; /* Espaço para navbar fixa */
+    display: flex;
+    justify-content: center; 
+    padding-top: 170px;
+}
+
+/* ======== CONTAINER DO FORMULÁRIO ======== */
+.container-cadastro {
+    background: linear-gradient(135deg, #ffae58, #ffa23f);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 400px;
+    margin-top: 40px; 
+    padding-bottom: 200px; 
+    height: 550px; 
+
+}
+
+.container-cadastro-produtos {
+    background: linear-gradient(135deg, #ffae58, #ffa23f);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 400px;
+    margin-top: 40px; 
+    padding-bottom: 200px; 
+    height: 370px; 
+
+}
+
+.h2-cadastro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* ======== CAMPOS DE TEXTO ======== */
+.label-cadastro {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-cadastro[type="text"],
+.input-cadastro-password[type="password"],
+.input-cadastro[type="int"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* ======== TOGGLE / CHECKBOX ======== */
+.toggle-cadastro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.input-cadastro[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* ======== BOTÃO ======== */
+.button-cadastro {
+    width: 100%;
+    padding: 12px;
+    background: #ff5b2a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-cadastro:hover {
+    background: #ff5b2a;
+} 
+
+/* ======== NAVBAR ======== */
+.navbar {
+    background-color: #ff5722 !important;
+    padding: 8px 16px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* LOGO + TEXTO */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+.navbar-brand img {
+    border-radius: 6px;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.navbar-toggler {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background-color: #ff784e;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* MENU COLAPSADO */
+.navbar-collapse {
+    background-color: #ff784e;
+    border-radius: 0 0 10px 10px;
+}
+
+/* AJUSTES MOBILE */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+}   
